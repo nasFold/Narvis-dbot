@@ -37,4 +37,4 @@ async def show_help(ctx):
         help_message += f"- {command}\n"
     await ctx.send(help_message)
 
-bot.run('DISCORD_BOT_TOKEN')
+bot.run(DISCORD_BOT_TOKEN)
