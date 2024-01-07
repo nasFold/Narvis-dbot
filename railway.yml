@@ -1,0 +1,5 @@
+services:
+  - env: production
+    name: discord-bot
+    command: python main.py
+    
