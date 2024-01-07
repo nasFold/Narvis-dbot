@@ -7,7 +7,6 @@ intents = discord.Intents.default()
 intents.messages = True
 intents.guilds = True
 
-DISCORD_BOT_TOKEN = 'MTE5MzQ5OTczMzA4ODU0Njg5Nw.GW7PCA.ne3rT5oSMnkZfCDPQCU_z3wMpaCpYgM-OzhpnY'
 
 bot = commands.Bot(command_prefix='/', intents=intents)
 
@@ -34,5 +33,6 @@ async def show_help(ctx):
     for command in narvis_helper.responses.keys():
         help_message += f"- {command}\n"
     await ctx.send(help_message)
-
-bot.run(DISCORD_BOT_TOKEN)
+    
+TOKEN = 'MTE5MzQ5OTczMzA4ODU0Njg5Nw.G_ocjj.E-2JYDntCyrcGQmNk9NkXZKffZGo1LbCC-6uWo'
+bot.run(TOKEN)
