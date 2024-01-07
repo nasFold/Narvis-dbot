@@ -34,5 +34,5 @@ async def show_help(ctx):
         help_message += f"- {command}\n"
     await ctx.send(help_message)
     
-TOKEN = 'MTE5MzQ5OTczMzA4ODU0Njg5Nw.GcGO0B.BKAGmoP4y5mBZ_Fi70U-9JI0YxCEnwJab9LLbM'
+TOKEN = 'MTE5MzQ5OTczMzA4ODU0Njg5Nw.GDXtlG.VGdAr5ej2xC4ORzSbPmiTBOInInIYXq-JvOHCo'
 bot.run(TOKEN)
