@@ -1,12 +1,13 @@
 # main.py
 import discord
 from discord.ext import commands
-from config import DISCORD_BOT_TOKEN
 from narvis_helper import NarvisHelper
 
 intents = discord.Intents.default()
 intents.messages = True
 intents.guilds = True
+
+DISCORD_BOT_TOKEN = 'MTE5MzQ5OTczMzA4ODU0Njg5Nw.GW7PCA.ne3rT5oSMnkZfCDPQCU_z3wMpaCpYgM-OzhpnY'
 
 bot = commands.Bot(command_prefix='/', intents=intents)
 
