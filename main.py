@@ -1,10 +1,7 @@
 # main.py
 import discord
 from discord.ext import commands
-import requests
-import openai
-import datetime
-from config import DISCORD_BOT_TOKEN, WEATHER_API_KEY, GPT2_API_KEY
+from config import DISCORD_BOT_TOKEN
 from narvis_helper import NarvisHelper
 
 intents = discord.Intents.default()
@@ -13,7 +10,7 @@ intents.guilds = True
 
 bot = commands.Bot(command_prefix='/', intents=intents)
 
-narvis_helper = NarvisHelper(WEATHER_API_KEY, GPT2_API_KEY)
+narvis_helper = NarvisHelper()  # Menggunakan nilai default dari file config.py
 
 @bot.event
 async def on_ready():
