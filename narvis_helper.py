@@ -1,11 +1,12 @@
 # narvis_helper.py
 import requests
 import openai
+from config import WEATHER_API_KEY, GPT2_API_KEY
 
 class NarvisHelper:
-    def __init__(self, weather_api_key, gpt2_api_key):
-        self.weather_api_key = weather_api_key
-        self.gpt2_api_key = gpt2_api_key
+    def __init__(self):
+        self.weather_api_key = WEATHER_API_KEY
+        self.gpt2_api_key = GPT2_API_KEY
         self.responses = {
             'tanya ai': self.ask_gpt2,
             'cek cuaca': self.check_weather,
@@ -41,3 +42,4 @@ class NarvisHelper:
             return answer
         except Exception as e:
             return f'Failed to get answer from GPT-2: {e}'
+            
